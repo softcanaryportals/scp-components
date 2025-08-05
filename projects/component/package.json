@@ -1,0 +1,14 @@
+{
+  "name": "component",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "primeng": "^17.0.0"
+  },
+  "dependencies": {
+    "jmespath": "^0.16.0",
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImportsModule } from './imports';
 
 @Component({
   selector: 'lib-worklist',
   standalone: true,
-  imports: [CommonModule, ImportsModule],
+  imports: [CommonModule,ImportsModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './worklist.component.html',
   styleUrl: './worklist.component.css'
 })

@@ -10,6 +10,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
   imports: [InputTextModule,JsonPipe,ReactiveFormsModule,InputNumberModule],
   templateUrl: './filters.component.html',
   styleUrl: './filters.component.scss'
+  
 })
 export class FiltersComponent implements OnInit {
   

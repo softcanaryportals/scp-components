@@ -1,1 +1,29 @@
-<p>filters works!</p>
+<div class="flex flex-column gap-2">
+     @for(filter of filters; track filters) {
+        <div>
+        <label>{{filter.label}}</label>
+
+        <!-- Filtro de tipo string -->
+        @if(filter.type === FilterCompType.STRING) {
+        <input 
+        pInputText 
+        [disabled]="!!!filter.disabled"
+        [required]="!!!filter.required"
+        [formControlName]="filter.attribute"  
+        />
+        }
+
+        <!-- Filtro de tipo number -->
+        @if(filter.type === FilterCompType.NUMBER) {
+        <p-inputNumber 
+        mode="decimal" 
+        [showButtons]="true" 
+        inputId="minmax-buttons" 
+        [formControlName]="filter.attribute"  
+        [min]="0" 
+        [max]="100" /> 
+        }
+        </div>
+        
+    }
+</div>
